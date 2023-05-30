@@ -1,0 +1,99 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+body{
+  margin: 0px;
+  background-color: #F0EB8D;
+}
+
+.flex{
+  display: flex;
+}
+
+#side-bar{
+  width: 60px;
+  background-color: #242527
+  ;
+  height: 100vh;
+}
+
+#canvas{
+  border: 1px solid black;
+  margin: 2px;
+  background-color: white;
+}
+
+#compass-btn{
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  margin-top: 35px;
+  background-color: white;
+  border-radius: 100%;
+  border: 2px solid orange;
+}
+.compass-icon{
+  margin: 5px;
+  font-size: 30px;
+  color: rgb(41, 24, 120); 
+  pointer-events: none;
+}
+
+/* compass */
+#compass{
+  position: absolute;
+  left: 200px;
+  top: 200px;
+  transform-origin: left center;
+  /* transform: rotate(45deg); */
+  pointer-events: none;
+}
+#compass-sharp{
+  width: 30px;
+  height: 30px;
+  background: url("compass-sharp.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+#compass-body{
+  margin-top: 10px;
+  width: 0px;
+  height: 10px;
+  background-color: #4D4D4D;
+}
+#compass-pencil{
+  width: 30px;
+  margin-top: 5px;
+  height: 20px;
+  background: url("right-arrow.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position-x: -10px;
+  background-position-y: -5px; */
+}
+
+.svg{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+}
+
+/* Eraser */
+#eraser{
+  width: 30px;
+  height: 50px;
+  background: url("eraser.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 200px;
+  top: 200px;
+  pointer-events: none;
+}
+.eraser-img{
+  width: 40px;
+  margin: 10px;
+  pointer-events: none;
+}
